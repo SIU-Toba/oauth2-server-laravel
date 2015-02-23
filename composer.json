@@ -1,4 +1,4 @@
-\{
+{
     "name": "siu-toba/laravel-oauth2-package",
     "description": "A Laravel package for Oauth2 integration",
     "keywords": ["laravel", "saml2", "oauth2"],
