@@ -1,0 +1,28 @@
+\{
+    "name": "SIU-Toba/laravel-oauth2-package",
+    "description": "A Laravel package for Oauth2 integration",
+    "keywords": ["laravel", "saml2", "oauth2"],
+    "homepage": "https://github.com/SIU-Toba/laravel-oauth2-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andrés",
+            "email": "andresblanco@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "onelogin/php-saml": "2.3",
+	"bshaffer/oauth2-server-php": "dev-develop"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "SIUToba\\Oauth2\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
