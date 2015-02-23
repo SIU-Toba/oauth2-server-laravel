@@ -14,7 +14,7 @@
         "php": ">=5.4.0",
         "illuminate/support": "5.0.*",
         "onelogin/php-saml": "2.3",
-	"bshaffer/oauth2-server-php": "dev-master"
+	"bshaffer/oauth2-server-php": "v1.6"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*"
