@@ -1,5 +1,5 @@
 <?php
-namespace Aacotroneo\Saml2;
+    namespace Aacotroneo\Saml2;
 
 use OneLogin_Saml2_Auth;
 use URL;
