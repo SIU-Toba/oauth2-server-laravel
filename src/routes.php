@@ -2,7 +2,7 @@
 
 
 //Route::group(array('prefix' => config('saml2_settings.routesPrefix')), function () {
-Route::group(array('prefix' => 'test'), function () {
+Route::group(array('prefix' => 'oauth2'), function () {
 
     Route::post('/token', [
         'uses' => 'SIUToba\Oauth2\Http\Controllers\Oauth2Controller@token',
