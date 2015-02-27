@@ -1,33 +1,24 @@
 <?php
 
-namespace Aacotroneo\Saml2\Http\Controllers;
+namespace SIUToba\Oauth2\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use Config;
-use Event;
-use Log;
-use Redirect;
-use Response;
-use Session;
-use SIUToba\Oauth2\Oauth2Server;
-
+use OAuth2\HttpFoundationBridge\Request as BridgedRequest;
+use Request;
+use Oauth2Server;
 
 class Oauth2Controller extends Controller
 {
 
-    protected $oauth2Server;
-
-    /**
-     * @param Oauth2Server $oauth2Server injected.
-     */
-    function __construct(Oauth2Server $oauth2Server)
+    function __construct()
     {
-        $this->oauth2Server = $oauth2Server;
+
     }
 
     function token()
     {
-
+        $bridgedRequest  = BridgedRequest::createFromRequest(Request::instance());
+        return Oauth2Server::handleTokenRequest($bridgedRequest);
     }
 
 }

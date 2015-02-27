@@ -38,7 +38,6 @@ class Saml2ServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $this->app->singleton('Aacotroneo\Saml2\Saml2Auth', function ($app) {
             $config = config('saml2_settings');
 

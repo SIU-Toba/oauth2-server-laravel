@@ -110,5 +110,22 @@ That's it. Feel free to ask any questions, make PR or suggestions, or open Issue
 
 
 
+### Installation
+providers
+'SIUToba\Oauth2\Oauth2ServiceProvider',
+aliases
+'Oauth2Server' => 'SIUToba\Oauth2\Facades\Oauth2Server'
 
+### Serve
+php artisan serve --port=8008
+### Migrations
+php artisan vendor:publish --provider="SIUToba\Oauth2\Oauth2ServiceProvider" --tag="migrations"
+si se está creando de 0 la base
+php artisan migrate:install
 
+para correr la migracion
+php artisan migrate
+
+### Seeds
+ php artisan vendor:publish --provider="SIUToba\Oauth2\Oauth2ServiceProvider" --tag="seeds"
+ 

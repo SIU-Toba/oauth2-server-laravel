@@ -12,7 +12,8 @@ class Oauth2Server extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'SIUToba\Oauth2\Oauth2Server';
+        //        return 'SIUToba\Oauth2\Oauth2Server';
+        return 'OAuth2\Server';
     }
 
 } 
