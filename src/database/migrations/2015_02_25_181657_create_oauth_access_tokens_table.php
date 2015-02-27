@@ -24,9 +24,9 @@ class CreateOauthAccessTokensTable extends Migration {
 		{
 		    $table->string('access_token', 40);
             $table->string('client_id');
-            $table->string('user_id');
+            $table->string('user_id')->nullable();
             $table->timestamp('expires');
-            $table->text('scope');
+            $table->text('scope')->nullable();
 
             $table->primary('access_token', 'access_token_pk');
 		});

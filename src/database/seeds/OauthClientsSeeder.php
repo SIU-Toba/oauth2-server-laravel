@@ -6,8 +6,8 @@ class OauthClientsSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('oauth_clients_table')->delete();
-        DB::table('oauth_clients_table')->insert([
+        DB::table('oauth_clients')->delete();
+        DB::table('oauth_clients')->insert([
             'client_id' => 'testclient',
             'client_secret' => 'testpass',
             'redirect_uri' => 'http://disney.com',
