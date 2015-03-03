@@ -1,5 +1,5 @@
 ## Laravel 5 - Saml2
-
+VBLalal
 [![Build Status](https://travis-ci.org/aacotroneo/laravel-saml2.svg)](https://travis-ci.org/aacotroneo/laravel-saml2)
 
 A Laravel package for Saml2 integration as a SP (service provider) based on OneLogin toolkit, which is much lighter and easier to install than simplesamlphp SP. It doesn't need separate routes or session storage to work!
@@ -120,7 +120,7 @@ aliases
 php artisan serve --port=8008
 ### Migrations
 php artisan vendor:publish --provider="SIUToba\Oauth2\Oauth2ServiceProvider" --tag="migrations"
-si se est· creando de 0 la base
+si se est√° creando de 0 la base
 php artisan migrate:install
 
 para correr la migracion
